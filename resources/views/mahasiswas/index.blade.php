@@ -7,7 +7,7 @@
             </div>
         </div>
     </div>
-        <form class="row mb-3 mt-5" action="{{ route('cariMahasiswa') }}" method="POST">
+        <form class="row mb-3 mt-5" action="{{ route('cariMahasiswa') }}" method="GET">
         @csrf
             <div class="col-md-6">
                 <div class="d-flex flex-row">
@@ -43,7 +43,7 @@
                 <td>{{ $mahasiswa->nim }}</td>
                 <td>{{ $mahasiswa->nama }}</td>
                 <td>{{ $mahasiswa->email }}</td>
-                <td>{{ $mahasiswa->kelas }}</td>
+                <td>{{ $mahasiswa->kelas->nama_kelas }}</td>
                 <td>{{ $mahasiswa->jurusan }}</td>
                 <td>{{ $mahasiswa->no_handphone }}</td>
                 <td>{{ $mahasiswa->tanggal_lahir }}</td>

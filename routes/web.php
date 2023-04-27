@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('cari-mahasiswa', [MahasiswaController::class, 'cariMahasiswa'])->name('cariMahasiswa');
+Route::get('cari-mahasiswa', [MahasiswaController::class, 'cariMahasiswa'])->name('cariMahasiswa');
 Route::resource('mahasiswa', MahasiswaController::class);

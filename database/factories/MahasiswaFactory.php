@@ -20,7 +20,7 @@ class MahasiswaFactory extends Factory
             'nim' => '0',
             'nama' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'kelas' => '2H',
+            'kelas_id' => '1',
             'jurusan' => 'Teknologi Informasi',
             'no_handphone' => fake()->phoneNumber(),
             'tanggal_lahir' => fake()->date()
